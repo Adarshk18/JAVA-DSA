@@ -28,7 +28,7 @@ public class LinearSearch {
         if (arr.length == 0){
             return -1;
         }
-       for (int index=0; index< arr.length; index++){
+       for (int index=0; index<= arr.length; index++){
            int element = arr[index];
             if (element == target){
                 System.out.println("The element is present at location "+(index));
