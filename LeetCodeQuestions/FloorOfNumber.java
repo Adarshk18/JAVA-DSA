@@ -2,7 +2,7 @@ package LeetCodeQuestions;
 
 import java.util.Scanner;
 
-public class CeilingOfNumber {
+public class FloorOfNumber {
     public static void main(String[] args) {
         int target,index;
         int[] arr = new int[0];
@@ -25,11 +25,9 @@ public class CeilingOfNumber {
         System.out.println(ans);
     }
 
-    //return the index of smallest number greater than or equal to target
+    //return thr index of greatest number<=target number
     static int CeilingOfNumber(int[] arr,int target){
-        if (target>arr[arr.length-1]){
-            return -1;
-        }
+
         int start =0;
         int end = arr.length-1;
 
@@ -44,6 +42,6 @@ public class CeilingOfNumber {
                 return mid;
             }
         }
-        return start;
+        return end;
     }
 }
