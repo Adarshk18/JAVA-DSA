@@ -6,11 +6,10 @@ public class BinarySearch {
     public static void main(String[] args) {
         int target,index;
         int[] arr = new int[0];
-        int n = arr.length;
         Scanner in = new Scanner(System.in);
 
         System.out.println("Enter the number of elements: ");
-        n = in.nextInt();
+        int n = in.nextInt();
 
         System.out.println("Enter the elements: ");
 
